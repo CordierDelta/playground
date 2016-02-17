@@ -1,0 +1,13 @@
+{
+ "name": "meteor-recurly",
+ "version": "0.0.1",
+ "description": "Meteor + Recurly Example",
+ "author": "ethaan",
+ "repository": {
+  "type": "git",
+  "url": "https://github.com/Ethaan/playground/recurly"
+ },
+ "dependencies": {
+  "recurly-js": "2.1.3"
+ }
+}

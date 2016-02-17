@@ -1,0 +1,11 @@
+{
+  "recurly":{
+    "API_KEY": "yourkey",
+    "SUBDOMAIN": "yourdomain-sandbox",
+    "ENVIRONMENT": "sandbox",
+    "DEBUG" : true
+  },
+  "public":{
+    "publicRecurlyKey": "your-publickey"
+  }
+}

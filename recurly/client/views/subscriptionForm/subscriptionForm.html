@@ -1,0 +1,56 @@
+<template name="subscriptionForm">
+  <div class="container">
+    <div class="row subscription_form_wrapper">
+      <form class="col s12" id="subscription-recurly-test">
+        <input name="fakeusernameremembered" style="display:none" type="text"/>
+        {{! just to avoid chrome autoprefill}}
+        <input name="fakepasswordremembered" style="display:none" type="password"/>
+        <div class="row">
+          <div class="input-field col s6">
+            <input class="validate" data-recurly="first_name" id="first_name" type="text">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input class="validate" data-recurly="last_name" id="last_name" type="text">
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s9">
+            <input class="validate" data-recurly="number" id="number" type="text">
+            <label for="number">Card Number</label>
+          </div>
+          <div class="input-field col s3">
+            <input class="validate" data-recurly="cvv" id="cvv" type="password">
+            <label for="cvv">CVC</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <select class="validate" data-recurly="month" id="month">
+              {{#each months}}
+                <option value="{{this}}">{{this}}</option>
+              {{/each}}
+            </select>
+            <label>Exp Month</label>
+          </div>
+          <div class="input-field col s6">
+            <select class="validate" data-recurly="year" id="year">
+              {{#each years}}
+                <option value="{{this}}">{{this}}</option>
+              {{/each}}
+            </select>
+            <label>Exp Year</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <button class="btn waves-effect waves-light" name="action" type="submit">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</template>
