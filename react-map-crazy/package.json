@@ -1,0 +1,23 @@
+{
+  "name": "react-map-crazy",
+  "private": false,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ethaan/playground/tree/master/react-map-crazy"
+  },
+  "author": "ethaan",
+  "keywords": [
+    "react",
+    "meteor"
+  ],
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0",
+    "react": "15.1.0",
+    "react-addons-pure-render-mixin": "15.1.0",
+    "react-dom": "15.1.0",
+    "react-router": "2.5.1"
+  }
+}
